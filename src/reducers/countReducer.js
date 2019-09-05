@@ -1,4 +1,4 @@
-function countReducer(state = 0, action) {
+export default function countReducer(state = 0, action) {
   switch (action.type) {
     case 'INCREMENT_COUNT':
       return state + 1;
@@ -8,5 +8,3 @@ function countReducer(state = 0, action) {
       return state;
   }
 }
-
-export default countReducer;

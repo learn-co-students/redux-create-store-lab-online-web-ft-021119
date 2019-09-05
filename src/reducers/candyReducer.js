@@ -1,4 +1,4 @@
-function candyReducer(state = [], action) {
+export default function candyReducer(state = [], action) {
   switch (action.type) {
     case 'ADD_CANDY':
       return [...state, action.candy];
@@ -6,5 +6,3 @@ function candyReducer(state = [], action) {
       return state;
   }
 }
-
-export default candyReducer;
